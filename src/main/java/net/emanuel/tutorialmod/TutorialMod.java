@@ -1,6 +1,7 @@
 package net.emanuel.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.emanuel.tutorialmod.blocks.ModBlocks;
 import net.emanuel.tutorialmod.item.ModCreativeModeTabs;
 import net.emanuel.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -32,6 +33,8 @@ public class TutorialMod {
 
         ModItems.register(modEventBus);
 
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -44,10 +47,7 @@ public class TutorialMod {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.SAPPHIRE);
-            event.accept(ModItems.RAW_SAPPHIRE);
-        }
+        //if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){}
     }
 
     @SubscribeEvent
