@@ -1,13 +1,13 @@
 {
   "type": "minecraft:smelting",
   "category": "misc",
-  "cookingtime": 200,
-  "experience": 0.7,
+  "cookingtime": 160,
+  "experience": 0.9,
   "ingredient": {
-    "item": "tutorialmod:raw_sapphire_block"
+    "item": "tutorialmod:nether_sapphire_ore"
   },
   "result": {
-    "count": 9,
+    "count": 1,
     "item": "tutorialmod:sapphire"
   }
 }

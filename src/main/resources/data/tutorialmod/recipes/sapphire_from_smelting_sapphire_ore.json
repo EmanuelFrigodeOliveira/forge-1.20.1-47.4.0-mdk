@@ -4,10 +4,10 @@
   "cookingtime": 200,
   "experience": 0.7,
   "ingredient": {
-    "item": "tutorialmod:raw_sapphire_block"
+    "item": "tutorialmod:sapphire_ore"
   },
   "result": {
-    "count": 9,
+    "count": 2,
     "item": "tutorialmod:sapphire"
   }
 }
